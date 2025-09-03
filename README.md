@@ -5,12 +5,19 @@ O objetivo principal foi praticar conceitos fundamentais de desenvolvimento web 
 
 ---
 
+<img width="1592" height="527" alt="image" src="https://github.com/user-attachments/assets/691b74b0-895b-4ded-ade4-b08462ab3fe5" />
+<img width="1553" height="545" alt="image" src="https://github.com/user-attachments/assets/ef59ce89-a9f4-4f66-b58c-7c991301f445" />
+<img width="1526" height="538" alt="image" src="https://github.com/user-attachments/assets/cd69549d-bb53-4f8a-baaa-ed47d360328f" />
+
+
+---
+
 ## 🚀 Funcionalidades
 - ✅ Criar, visualizar, editar e excluir tarefas (CRUD).  
 - ✅ Validação de formulários para garantir consistência dos dados.  
 - ✅ Armazenamento em banco de dados via Eloquent ORM.  
 - ✅ Interface simples utilizando Blade (HTML, CSS e, opcionalmente, Bootstrap).  
-- ✅ Filtros básicos para organização (pendente, concluída, data limite).  
+- ✅ Exportação de tarefas via XLSX, CSV e duas versões de PDF 
 - ✅ Estrutura MVC do Laravel aplicada.  
 - 🔒 Autenticação de usuários com login/logout.  
 
