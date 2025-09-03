@@ -1,62 +1,91 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400"></a></p>
+# Controle de Tarefas
 
-<p align="center">
-<a href="https://travis-ci.org/laravel/framework"><img src="https://travis-ci.org/laravel/framework.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+Um sistema simples de **controle de tarefas** desenvolvido para estudo, utilizando **Laravel**.  
+O objetivo principal foi praticar conceitos fundamentais de desenvolvimento web com PHP, MVC e banco de dados.
 
-## About Laravel
+---
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+## 🚀 Funcionalidades
+- ✅ Criar, visualizar, editar e excluir tarefas (CRUD).  
+- ✅ Validação de formulários para garantir consistência dos dados.  
+- ✅ Armazenamento em banco de dados via Eloquent ORM.  
+- ✅ Interface simples utilizando Blade (HTML, CSS e, opcionalmente, Bootstrap).  
+- ✅ Filtros básicos para organização (pendente, concluída, data limite).  
+- ✅ Estrutura MVC do Laravel aplicada.  
+- 🔒 Autenticação de usuários com login/logout.  
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+---
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+## 🛠️ Tecnologias Utilizadas
+- **Backend:** PHP com Laravel  
+- **Frontend:** Blade + HTML/CSS + Bootstrap
+- **Banco de Dados:** MySQL ou SQLite  
+- **Controle de versão:** Git/GitHub  
 
-## Learning Laravel
+---
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+## 📦 Instalação e execução local
+Clone o repositório e instale as dependências:
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 1500 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+```bash
+git clone https://github.com/GustavoZkD/controle-tarefas.git
+cd controle-tarefas
+composer install
+cp .env.example .env
+php artisan key:generate
+```
 
-## Laravel Sponsors
+Configure o arquivo **.env** com as credenciais do seu banco de dados e rode as migrações:
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell).
+```bash
+php artisan migrate --seed
+```
 
-### Premium Partners
+Por fim, inicie o servidor local:
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Cubet Techno Labs](https://cubettech.com)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[Many](https://www.many.co.uk)**
-- **[Webdock, Fast VPS Hosting](https://www.webdock.io/en)**
-- **[DevSquad](https://devsquad.com)**
-- **[Curotec](https://www.curotec.com/)**
-- **[OP.GG](https://op.gg)**
+```bash
+php artisan serve
+```
 
-## Contributing
+Acesse no navegador: [http://127.0.0.1:8000](http://127.0.0.1:8000)
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+---
 
-## Code of Conduct
+## 📂 Estrutura básica do projeto
+```
+app/
+  Http/Controllers/   # Controladores
+  Models/             # Modelos (Eloquent ORM)
+database/
+  migrations/         # Migrações do banco
+resources/views/      # Views (Blade)
+routes/               # Definições de rotas
+tests/                # Testes automatizados
+```
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+---
 
-## Security Vulnerabilities
+## 🎯 Objetivo do projeto
+Este projeto foi criado com foco em **aprendizado**, cobrindo os seguintes pontos:
+- Conceitos de **MVC** no Laravel  
+- Roteamento e controladores  
+- Criação e execução de **migrações**  
+- Uso do **Eloquent ORM** para persistência de dados  
+- Construção de formulários e **validação**  
+- Noções de autenticação de usuários  
+- Criação de **views reutilizáveis** com Blade  
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+---
 
-## License
+## 🤝 Contribuindo
+1. Faça um fork do projeto  
+2. Crie uma branch para sua feature: `git checkout -b minha-feature`  
+3. Faça commit das alterações: `git commit -m 'Adicionando nova feature'`  
+4. Envie para o repositório remoto: `git push origin minha-feature`  
+5. Abra um Pull Request  
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+---
+
+## 📄 Licença
+Este projeto está sob a licença **MIT**.  
+Sinta-se livre para estudar, modificar e utilizar como quiser.
